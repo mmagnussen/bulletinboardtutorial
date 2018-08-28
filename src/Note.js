@@ -12,6 +12,11 @@ class Note extends Component {
         this.save = this.save.bind(this)
         this.renderForm = this.renderForm.bind(this)
         this.renderDisplay = this.renderDisplay.bind(this)
+        this.randomBetween = this.randomBetween.bind(this)
+    }
+
+    randomBetween(x, y, s) {
+        return x + Math.ceil(Math.random() * (y - x)) + s
     }
 
     edit() {
